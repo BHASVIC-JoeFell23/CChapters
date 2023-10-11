@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "untitled6",
+					"name" : "untitled5",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "untitled6::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-untitled6-Debug-62d7ff4140e04b8137c4.json",
-					"name" : "untitled6",
+					"id" : "untitled5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled5-Debug-4f12fa7b5a447893b2b6.json",
+					"name" : "untitled5",
 					"projectIndex" : 0
 				}
 			]
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/joe.fell23/CFiles11/CChapters/number_guessr/cmake-build-debug",
-		"source" : "C:/Users/joe.fell23/CFiles11/CChapters/number_guessr"
+		"build" : "C:/Users/joe.fell23/CFiles11/CChapters/animal_guessr/cmake-build-debug",
+		"source" : "C:/Users/joe.fell23/CFiles11/CChapters/animal_guessr"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 5
 	}
 }

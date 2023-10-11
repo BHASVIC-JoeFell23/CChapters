@@ -10,6 +10,10 @@ int main() {
     char carnivore = 0;
     char flight = 0;
     char group = 0;
+    char feline = 0;
+    char fur = 0;
+    char food = 0;
+    char fins = 0;
     printf("Pick an animal from the following:\nHorse, cow, pig, sheep, dog, cat, lion, tiger, whale, dolphin,\nseal, penguin, ostrich, sparrow, spider, ant, bee, wasp, termite, octopus, squid\n\n");
     printf("Please answer the following questions with 'Y' for yes or 'N' for no, or an integer if necessary:\n\n");
     printf("Does your animal have six or more limbs?\n");
@@ -41,7 +45,7 @@ int main() {
     }else if(mammal == 'N' && UK=='N' && carnivore=='N') {
         printf("Your animal is an ostrich");
         return 0;
-    }printf("Can your animal usually fly?\n")
+    }printf("Can your animal usually fly?\n");
     scanf(" %c",&flight);
     if(carnivore == 'Y' && limbs == 'Y' && football == 'N' && flight == 'N'){
         printf("Your animal is a spider");
@@ -64,6 +68,41 @@ int main() {
         printf("Your animal is an octopus");
         return 0;
     }printf("Is your animal a member of the feline family?\n");
-    scanf()
-    return 0;
+    scanf(" %c",&feline);
+    if(feline == 'Y' && wild == 'N'){
+        printf("Your animal is a cat");
+        return 0;
+    }else if(feline == 'Y' && group == 'N'){
+        printf("Your animal is a tiger");
+        return 0;
+    }else if(feline == 'Y' && group == 'Y'){
+        printf("Your animal is a lion");
+        return 0;
+    }else if(carnivore == 'Y' && breathe == 'Y' && wild == 'N'){
+        printf("Your animal is a dog");
+        return 0;
+    }printf("Is your animal covered by fur?\n");
+    scanf(" %c",&fur);
+    printf("Is your animal most commonly used for food/drink?\n");
+    scanf(" %c",&food);
+    if(fur == 'Y' && food == 'Y'){
+        printf("Your animal is a cow");
+        return 0;
+    }else if(fur == 'Y' && food == 'N'){
+        printf("Your animal is a horse");
+        return 0;
+    }else if(fur == 'N' && food == 'Y'){
+        printf("Your animal is a pig");
+        return 0;
+    }else if(fur == 'N' && food == 'N' && breathe == 'Y'){
+        printf("Your animal is a sheep");
+        return 0;
+    }printf("Does your animal always have dorsal fins?\n");
+    scanf(" %c",&fins);
+    if(fur == 'Y' && food == 'Y'){
+        printf("Your animal is a dolphin");
+        return 0;
+    }else {
+        printf("Your animal is a whale");
+    }return 0;
 }
