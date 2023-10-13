@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/joefell/CLionProjects/untitled3/cmake-build-debug",
-		"source" : "/Users/joefell/CLionProjects/untitled3"
+		"build" : "/Users/joefell/Documents/GitHub/CChapters/Number_average_calculator/cmake-build-debug",
+		"source" : "/Users/joefell/Documents/GitHub/CChapters/Number_average_calculator"
 	},
 	"version" : 
 	{
