@@ -1,0 +1,15 @@
+# ninja log v5
+1	80	1697229192452745474	CMakeFiles/Number_chain.dir/main.c.o	aabf1b2c788862e0
+81	169	1697229192542792198	Number_chain	1e8ed23dcb81edf5
+0	687	1697229963028664497	CMakeFiles/Number_chain.dir/main.c.o	aabf1b2c788862e0
+688	830	1697229963172964643	Number_chain	1e8ed23dcb81edf5
+0	3554	1697229998056830486	CMakeFiles/Number_chain.dir/main.c.o	aabf1b2c788862e0
+3554	3982	1697229998487078641	Number_chain	1e8ed23dcb81edf5
+0	104	1697230073075026080	CMakeFiles/Number_chain.dir/main.c.o	aabf1b2c788862e0
+105	220	1697230073193997779	Number_chain	1e8ed23dcb81edf5
+0	126	1697230147978684336	CMakeFiles/Number_chain.dir/main.c.o	aabf1b2c788862e0
+126	237	1697230148092166656	Number_chain	1e8ed23dcb81edf5
+1	725	1697230270912740921	CMakeFiles/Number_chain.dir/main.c.o	aabf1b2c788862e0
+725	836	1697230271032903399	Number_chain	1e8ed23dcb81edf5
+1	133	1697230293983905977	CMakeFiles/Number_chain.dir/main.c.o	aabf1b2c788862e0
+133	184	1697230294037155506	Number_chain	1e8ed23dcb81edf5
