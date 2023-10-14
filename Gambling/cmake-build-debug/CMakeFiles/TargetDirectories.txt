@@ -1,0 +1,3 @@
+/Users/joefell/Documents/GitHub/CChapters/Gambling/cmake-build-debug/CMakeFiles/Gambling.dir
+/Users/joefell/Documents/GitHub/CChapters/Gambling/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/joefell/Documents/GitHub/CChapters/Gambling/cmake-build-debug/CMakeFiles/rebuild_cache.dir
