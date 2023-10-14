@@ -63,5 +63,5 @@ int main() {
             }
         }
     }while(credits>0);
-    printf("You're out of credits :(\n You lasted %d attempts, thanks for playing!",attempts);
+    printf("You're out of credits :(\nNumber was %d\nYou lasted %d attempts, thanks for playing!",number,attempts);
 }
