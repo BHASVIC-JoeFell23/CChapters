@@ -11,8 +11,10 @@ int main() {
     int wagered_credits;
     int bonus;
     int x;
+    int y;
     char resume;
-    printf("You currently have 10 credits. The computer will generate a number from 0 to 30, you must guess this number and bet as many credits as you wish - a multiple of 10\nwill win you 3x your credits, a prime number 5x, and a number below 5 2x. You will be told if your number is too low or too high.\n\n");
+    char low_high;
+    printf("You currently have 10 credits. The computer will generate a number from 0 to 30, you must guess this number and bet as many credits as you wish - a multiple of 10\nwill win you 3x your credits, a prime number 5x, and a number below 5 2x. You can also wager 10 percent of your credits to be told if your number is too low or too\nhigh.\n\n");
     do{
         if(guess==number && wagered_credits <= credits && wagered_credits > 0){
             number = rand() % 31;
@@ -20,6 +22,7 @@ int main() {
         wagered_credits = 0;
         bonus = 1;
         x = 0;
+        y = 0;
         //printf("hehe %d",number);
         printf("What is your guess, and how many credits do you wager (separate these numbers with a comma)?\n");
         scanf("%d,%d",&guess,&wagered_credits);
@@ -48,12 +51,21 @@ int main() {
                     return 0;
                 }
             }else {
-                if (guess < number) {
-                    printf("Too low\n");
-                } else if (guess > number) {
-                    printf("Too high\n");
+                do{
+                    if(y>0){
+                        printf("Invalid input\n");
+                    }printf("Do you wish to know if your guess is too low or too high(Y/N)?\n");
+                    scanf(" %c",&low_high);
+                    y++;
+                }while(low_high != 'Y' && low_high != 'N');
+                if(low_high == 'Y'){
+                    credits = credits - (credits/10) - 1;
+                    if(guess>number){
+                        printf("Too high\nYour current credit score is %d\n",credits);
+                    }else if(guess<number){
+                        printf("Too low\nYour current credit score is %d\n",credits);
+                    }
                 }
-                printf("Your current credit score is %d\n", credits);
             }
         }else{
             if(wagered_credits<0){
