@@ -54,7 +54,7 @@ int main() {
                 do{
                     if(y>0){
                         printf("Invalid input\n");
-                    }printf("Do you wish to know if your guess is too low or too high(Y/N)?\n");
+                    }printf("Incorrect\nDo you wish to know if your guess is too low or too high(Y/N)?\n");
                     scanf(" %c",&low_high);
                     y++;
                 }while(low_high != 'Y' && low_high != 'N');
