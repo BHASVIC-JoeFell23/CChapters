@@ -7,6 +7,7 @@ int main() {
     int number = rand() % 31;
     int credits = 10;
     int attempts = 0;
+    int max_credits = 10;
     int guess;
     int wagered_credits;
     int bonus;
@@ -18,7 +19,10 @@ int main() {
     do{
         if(guess==number && wagered_credits <= credits && wagered_credits > 0){
             number = rand() % 31;
-        }guess = 0;
+        }if(credits>max_credits){
+            max_credits = credits;
+        }
+        guess = 0;
         wagered_credits = 0;
         bonus = 1;
         x = 0;
@@ -54,7 +58,7 @@ int main() {
                 do{
                     if(y>0){
                         printf("Invalid input\n");
-                    }printf("Incorrect\nDo you wish to know if your guess is too low or too high(Y/N)?\n");
+                    }printf("Incorrect\nYour current credit score is %d\nDo you wish to know if your guess is too low or too high(Y/N)?\n",credits);
                     scanf(" %c",&low_high);
                     y++;
                 }while(low_high != 'Y' && low_high != 'N');
@@ -75,5 +79,5 @@ int main() {
             }
         }
     }while(credits>0);
-    printf("You're out of credits :(\nNumber was %d\nYou lasted %d attempts, thanks for playing!",number,attempts);
+    printf("You're out of credits :(\nNumber was %d\nYou lasted %d attempts, with a max credit score of %d, thanks for playing!",number,attempts,max_credits);
 }
