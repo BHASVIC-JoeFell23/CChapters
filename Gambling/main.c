@@ -30,7 +30,7 @@ int main() {
         //printf("hehe %d",number);
         printf("What is your guess, and how many credits do you wager (separate these numbers with a comma)?\n");
         scanf("%d,%d",&guess,&wagered_credits);
-        if(wagered_credits <= credits && wagered_credits > 0){
+        if(wagered_credits <= credits && wagered_credits > 0 && guess > -1 && guess < 31){
             attempts++;
             credits = credits - wagered_credits;
             if(guess==number){
@@ -74,9 +74,14 @@ int main() {
         }else{
             if(wagered_credits<0){
                 printf("You cannot wager a negative number of credits\n");
-            }else{
+            }else if(wagered_credits > credits){
                 printf("You cannot wager that many credits\n");
-            }
+            }else if(guess < 0 || guess > 30){
+                printf("Guess must be between 0 and 30\n");
+            }else{
+                printf("Invalid input\n");
+            }wagered_credits = 0;
+            guess = 0;
         }
     }while(credits>0);
     printf("You're out of credits :(\nNumber was %d\nYou lasted %d attempts, with a max credit score of %d, thanks for playing!",number,attempts,max_credits);
