@@ -54,7 +54,7 @@ int main() {
                     printf("You finished with %d attempts and %d credits.\nThanks for playing!",attempts,credits);
                     return 0;
                 }
-            }else {
+            }else if(credits>0){
                 do{
                     if(y>0){
                         printf("Invalid input\n");
