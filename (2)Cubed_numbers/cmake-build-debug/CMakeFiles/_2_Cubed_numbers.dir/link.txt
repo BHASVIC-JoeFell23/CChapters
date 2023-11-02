@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\_2_Cubed_numbers.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\_2_Cubed_numbers.dir/objects.a @CMakeFiles\_2_Cubed_numbers.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\_2_Cubed_numbers.dir/objects.a -Wl,--no-whole-archive -o _2_Cubed_numbers.exe -Wl,--out-implib,lib_2_Cubed_numbers.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\_2_Cubed_numbers.dir\linkLibs.rsp
